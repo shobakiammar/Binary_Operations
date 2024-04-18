@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#999999"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Subtraction">
+
+    <EditText
+        android:id="@+id/edtFirstNumSub"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_margin="8dp"
+        android:hint="Enter the first binary number"
+        android:inputType="text"
+        android:textColorHint="#2E2929" />
+
+    <EditText
+        android:id="@+id/edtSecondNumSub"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_margin="8dp"
+        android:ems="10"
+        android:hint="Enter the second binary number"
+        android:inputType="text"
+        android:textColorHint="#2E2929" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#191919"
+            android:onClick="SubBtn"
+            android:text="Subtract" />
+
+        <Button
+            android:id="@+id/btnClearSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#191919"
+            android:onClick="ClearBtnSub"
+            android:text="Clear"
+            app:rippleColor="#4F6369" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResultSub"
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BackSub"
+            android:layout_width="160dp"
+            android:layout_height="69dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#191919"
+            android:onClick="BackBtnSub"
+            android:text="Back"
+            app:rippleColor="#4F6369" />
+    </LinearLayout>
+
+</LinearLayout>

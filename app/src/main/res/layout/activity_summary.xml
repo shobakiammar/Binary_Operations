@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#999999"
+    tools:context=".Summary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="In binary addition:"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="-You add binary numbers much like you add decimal numbers."
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="-You start from the rightmost digit and move to the left."
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="-If the sum of two digits is 0 or 1, you write down that sum."
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="-If the sum is 2, you write down 0 and carry over 1 to the next left position."
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="-If there's a carry after adding the leftmost digits, you add it to the next column's sum"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text=" Example: 101 + 011 =  1000"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Starting from the right, 1 + 1 = 10, so we write down 0 and carry over 1. Moving to the next column, we have 0 (from the carry) + 1 + 1 = 10 again, so we write down 0 and carry over 1. Finally, we add the leftmost digits, which are both 1, and we have 1 + 0 + 0 (no carry) = 1."
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:text="In binary subtraction:"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="-It's similar to decimal subtraction but simplified."
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="-You start from the rightmost digit and move to the left."
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="-If the digit being subtracted is smaller or equal to the one it's subtracted from, you write down the difference."
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="-If the digit being subtracted is larger, you borrow 1 from the next left position (just like borrowing in decimal subtraction)."
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="-If you borrow, subtract 1 from the next left position, and add 2 to the current position."
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="-Continue this process until you've subtracted all digits."
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Example: 110 - 101 = 001"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Starting from the right, 0 (from the bottom) - 1 = 1 (borrowed from the leftmost bit) and 1 (from the top) - 0 = 1. Moving to the next column, 1 (from the borrowed bit) - 0 = 1, and 1 (from the top) - 1 = 0. Finally, the leftmost digit: 1 (from the borrowed bit) - 1 = 0."
+            android:textStyle="bold|italic" />
+
+
+        <Button
+            android:id="@+id/BackSummary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#191919"
+            android:onClick="BackBtnSummary"
+            android:text="Back"
+            app:rippleColor="#4F6369" />
+
+    </LinearLayout>
+</ScrollView>
+
